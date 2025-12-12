@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* custom colors */
+  --color-bluish-black: hsl(218, 80%, 2%);
+  --color-bluish-gray: hsl(216, 28%, 7%);
+  --color-light-gray: hsl(213, 22%, 11%);
+  --color-pale-orange: hsl(11, 90%, 68%);
+  --color-blue: hsl(216, 84%, 52%);
+  --color-pink: hsl(328, 54%, 59%);
+  --color-word: hsl(210, 67%, 96%);
+  --color-mute: hsl(0, 0%, 70%);
+  --color-border: hsl(214, 12%, 27%);
+  --color-badge: hsl(210, 14%, 16%);
+
+  /* custom fonts */
+  --font-segoe-bold: 'Segoe UI bold', 'Noto Sans', sans-serif;
+  --font-segoe-normal: 'Segoe UI normal', 'Noto Sans', sans-serif;
+
+  /* custom breakpoint */
+  --breakpoint-xs: calc(450/16 *1rem);
+}
+
+@layer components {
+  .icon {
+    @apply w-6 h-6 text-mute;
+  }
+
+  .i-svg {
+    @apply w-4 h-4 fill-current text-mute;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .minibar-icons {
+    @apply w-fit h-full flex justify-center items-center gap-2 rounded hover:bg-light-gray cursor-pointer p-1 px-2 text-sm;
+  }
+}
