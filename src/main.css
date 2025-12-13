@@ -35,6 +35,7 @@
 
         --fontsize-32: calc(32/16 * 1rem);
         --fontsize-30: calc(30/16 * 1rem);
+        --fontsize-28: calc(28/16 * 1rem);
         --fontsize-24: calc(24/16 * 1rem);
         --fontsize-22: calc(22/16 * 1rem);
         --fontsize-20: calc(20/16 * 1rem);
@@ -77,6 +78,20 @@
 
         h3 {
             font-size: var(--fontsize-18);
+        }
+    }
+
+    @media screen and (max-width: calc(450/16 * 1rem)) {
+        h1 {
+            font-size: var(--fontsize-28);
+        }
+
+        h2 {
+            font-size: var(--fontsize-20);
+        }
+
+        h3 {
+            font-size: var(--fontsize-16);
         }
     }
 }
@@ -160,22 +175,22 @@
 
 @layer scrollbar {
     body::-webkit-scrollbar {
-        width: 9px;
+        width: 7px;
     }
 
     body::-webkit-scrollbar-thumb {
-        background: var(--color-bluish-gray);
-        border: 2px solid var(--color-mute);
+        background: var(--color-mute);
         border-radius: 20px;
     }
 
     body::-webkit-scrollbar-track {
-        background: var(--color-mute);
+        background: var(--color-border);
+        border-radius: 20px;
     }
 
     body::-webkit-scrollbar-thumb:hover,
     body::-webkit-scrollbar-thumb:active {
-        background: var(--color-border);
+        background: var(--color-word);
     }
 }
 
@@ -184,6 +199,7 @@
     /* sidebar section */
     .sidebar_section {
         width: calc(350/16 *1rem);
+        height: 100vh;
         z-index: 99;
 
         transform: translateX(-120%);
@@ -191,23 +207,22 @@
     }
 
     .sidebar_navigation::-webkit-scrollbar {
-        width: 11px;
+        width: 6px;
     }
 
     .sidebar_navigation::-webkit-scrollbar-thumb {
-        background: var(--color-bluish-gray);
-        border: 2px solid var(--color-mute);
+        background: var(--color-mute);
         border-radius: 20px;
     }
 
     .sidebar_navigation::-webkit-scrollbar-track {
-        background: var(--color-mute);
+        background: var(--color-border);
         border-radius: 20px;
     }
 
     .sidebar_navigation::-webkit-scrollbar-thumb:hover,
     .sidebar_navigation::-webkit-scrollbar-thumb:active {
-        background: var(--color-light-gray);
+        background: var(--color-word);
     }
 
     /* toggle open and close the sidebar */
@@ -349,8 +364,17 @@
         content: 'Creating new stuffs.';
     }
 
+    .title_link {
+        position: relative;
+    }
+
     .chain_svg {
+        position: absolute;
+        left: -1rem;
+        top: 35%;
+
         opacity: 0;
+        cursor: pointer;
         transition: opacity .4s ease;
     }
 
@@ -358,7 +382,7 @@
         opacity: 1;
     }
 
-    @media screen and (max-width: calc(576/16 *1rem)) {
+    @media screen and (max-width: calc(768/16 *1rem)) {
         .profile_user {
             width: 100%;
         }

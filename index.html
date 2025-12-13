@@ -20,7 +20,7 @@
 
 <body>
   <!-- ***** header element ***** -->
-  <header class="header_section">
+  <header class="header_section border-b border-mute/20">
 
     <!-- ***** navbar element ***** -->
     <nav class="navbar_section layout_wrapper bg-bluish-black">
@@ -34,7 +34,7 @@
 
         <!-- github sidebar -->
         <aside
-          class="sidebar_section text-word absolute top-0 left-0 h-dvh bg-bluish-black border-r-2 border-mute/20 rounded-r-2xl py-4 flex flex-col items-start gap-5">
+          class="sidebar_section text-word fixed top-0 left-0 h-dvh bg-bluish-black border-r-2 border-mute/20 rounded-r-2xl py-4 flex flex-col items-start gap-5">
 
           <!-- sidebar navbar section -->
           <div class="w-full flex-center justify-between px-4">
@@ -45,7 +45,8 @@
             </div>
 
             <!-- close sidebar icon -->
-            <label for="sidebar_check" class="w-fit flex-center cursor-pointer p-1 rounded hover:bg-light-gray">
+            <label title="Close menu" for="sidebar_check"
+              class="w-fit flex-center cursor-pointer p-1 rounded hover:bg-light-gray">
               <ion-icon name="close" class="w-5 h-5"></ion-icon>
             </label>
 
@@ -57,7 +58,7 @@
             <div class="flex flex-col items-start justify-center gap-2 w-full">
 
               <!-- github home -->
-              <div class="minibar-icons w-full justify-start">
+              <a href="https://github.com/dashboard" class="minibar-icons w-full justify-start">
                 <svg aria-hidden="true" focusable="false" class="octicon octicon-home fill-current icon w-4 h-4"
                   viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block"
                   overflow="visible" style="vertical-align: text-bottom;">
@@ -66,10 +67,10 @@
                   </path>
                 </svg>
                 <p class="text-word">Home</p>
-              </div>
+              </a>
 
               <!-- github issues -->
-              <div class="minibar-icons w-full justify-start">
+              <a href="https://github.com/issues" class="minibar-icons w-full justify-start">
                 <svg aria-hidden="true" focusable="false" class="octicon octicon-issue-opened fill-current icon w-4 h-4"
                   viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block"
                   overflow="visible" style="vertical-align: text-bottom;">
@@ -77,10 +78,10 @@
                   <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
                 </svg>
                 <p class="text-word">Issues</p>
-              </div>
+              </a>
 
               <!-- github pull-requests -->
-              <div class="minibar-icons w-full justify-start">
+              <a href="https://github.com/pulls" class="minibar-icons w-full justify-start">
                 <svg aria-hidden="true" focusable="false"
                   class="octicon octicon-git-pull-request icon w-4 h-4 fill-current" viewBox="0 0 16 16" width="16"
                   height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -90,10 +91,10 @@
                   </path>
                 </svg>
                 <p class="text-word">Pull requests</p>
-              </div>
+              </a>
 
               <!-- github repositories -->
-              <div class="minibar-icons w-full justify-start">
+              <a href="https://github.com/repos" class="minibar-icons w-full justify-start">
                 <svg aria-hidden="true" focusable="false" class="octicon octicon-repo icon fill-current h-4 w-4"
                   viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block"
                   overflow="visible" style="vertical-align: text-bottom;">
@@ -102,10 +103,10 @@
                   </path>
                 </svg>
                 <p class="text-word">Repositories</p>
-              </div>
+              </a>
 
               <!-- github projects -->
-              <div class="minibar-icons w-full justify-start">
+              <a href="https://github.com/projects" class="minibar-icons w-full justify-start">
                 <svg aria-hidden="true" focusable="false" class="octicon octicon-table icon fill-current w-4 h-4"
                   viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block"
                   overflow="visible" style="vertical-align: text-bottom;">
@@ -114,10 +115,10 @@
                   </path>
                 </svg>
                 <p class="text-word">Projects</p>
-              </div>
+              </a>
 
               <!-- github discussion -->
-              <div class="minibar-icons w-full justify-start">
+              <a href="https://github.com/discussions" class="minibar-icons w-full justify-start">
                 <svg aria-hidden="true" focusable="false"
                   class="octicon octicon-comment-discussion icon fill-current w-4 h-4" viewBox="0 0 16 16" width="16"
                   height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -127,10 +128,10 @@
                   </path>
                 </svg>
                 <p class="text-word">Discussions</p>
-              </div>
+              </a>
 
               <!-- github code spaces -->
-              <div class="minibar-icons w-full justify-start">
+              <a href="https://github.com/codespaces" class="minibar-icons w-full justify-start">
                 <svg aria-hidden="true" focusable="false" class="octicon octicon-codespaces icon w-4 h-4 fill-current"
                   viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block"
                   overflow="visible" style="vertical-align: text-bottom;">
@@ -142,10 +143,10 @@
                   </path>
                 </svg>
                 <p class="text-word">Codespaces</p>
-              </div>
+              </a>
 
               <!-- github copilot -->
-              <div class="minibar-icons w-full justify-start">
+              <a href="https://github.com/copilot" class="minibar-icons w-full justify-start">
                 <svg aria-hidden="true" focusable="false" class="octicon octicon-copilot icon w-4 h-4 fill-current"
                   viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block"
                   overflow="visible" style="vertical-align: text-bottom;">
@@ -157,7 +158,7 @@
                   </path>
                 </svg>
                 <p class="text-word">Copilot</p>
-              </div>
+              </a>
 
             </div>
 
@@ -167,7 +168,7 @@
             <div class="flex flex-col items-start justify-center gap-2 w-full">
 
               <!-- github explore -->
-              <div class="minibar-icons w-full justify-start">
+              <a href="https://github.com/explore" class="minibar-icons w-full justify-start">
                 <svg aria-hidden="true" focusable="false" class="octicon octicon-telescope w-4 h-4 icon fill-current"
                   viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block"
                   overflow="visible" style="vertical-align: text-bottom;">
@@ -176,10 +177,10 @@
                   </path>
                 </svg>
                 <p class="text-word">Explore</p>
-              </div>
+              </a>
 
               <!-- github Market place -->
-              <div class="minibar-icons w-full justify-start">
+              <a href="https://github.com/marketplace" class="minibar-icons w-full justify-start">
                 <svg aria-hidden="true" focusable="false" class="octicon octicon-gift fill-current icon w-4 h-4"
                   viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block"
                   overflow="visible" style="vertical-align: text-bottom;">
@@ -188,10 +189,10 @@
                   </path>
                 </svg>
                 <p class="text-word">Marketplace</p>
-              </div>
+              </a>
 
               <!-- github MCP registry -->
-              <div class="minibar-icons w-full justify-start">
+              <a href="https://github.com/mcp" class="minibar-icons w-full justify-start">
                 <svg aria-hidden="true" focusable="false" class="octicon octicon-mcp icon fill-current w-4 h-4"
                   viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block"
                   overflow="visible" style="vertical-align: text-bottom;">
@@ -203,7 +204,7 @@
                   </path>
                 </svg>
                 <p class="text-word">MCP registry</p>
-              </div>
+              </a>
 
             </div>
 
@@ -216,36 +217,34 @@
               <div class="w-full flex justify-between items-center">
                 <p class="text-mute text-sm">Top repositories</p>
 
-                <div class="w-8 h-8 flex-center cursor-pointer rounded hover:bg-light-gray">
+                <div title="Search for repositories"
+                  class="w-8 h-8 flex-center cursor-pointer rounded hover:bg-light-gray">
                   <ion-icon name="search" class="icon w-4 h-4"></ion-icon>
                 </div>
               </div>
 
               <!-- repositories links -->
-              <div class="minibar-icons pt-1 w-full items-center justify-start">
+              <a href="https://github.com/awizp/cyberdude-networks-landing-page"
+                class="minibar-icons pt-1 w-full items-center justify-start">
                 <div class="w-4 h-4 rounded-full overflow-hidden">
                   <img src="/assets/img/vishnuprakash.jfif" alt="Avatar">
                 </div>
                 <p class="text-word">awizp/cyberdude-networks-landing-page</p>
-              </div>
+              </a>
 
-              <div class="minibar-icons pt-1 w-full items-center justify-start">
+              <a href="https://github.com/awizp/mp3-downloader-landingpage"
+                class="minibar-icons pt-1 w-full items-center justify-start">
                 <div class="w-4 h-4 rounded-full overflow-hidden">
                   <img src="/assets/img/vishnuprakash.jfif" alt="Avatar">
                 </div>
                 <p class="text-word">awizp/mp3-downloader-landingpage</p>
-              </div>
+              </a>
 
               <p class="text-mute text-xs cursor-pointer">Show more</p>
 
             </div>
 
           </div>
-
-
-
-
-
         </aside>
 
         <!-- checkbox for searchbar -->
@@ -303,8 +302,9 @@
 
           <!-- search feedback -->
           <div class="flex-center justify-between p-1 text-blue w-full">
-            <p class="text-xs hover:underline cursor-pointer">Search syntax tips</p>
-            <p class="text-xs hover:underline cursor-pointer">Give feedback</p>
+            <a href="https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax"
+              class="text-xs hover:underline cursor-pointer">Search syntax tips</a>
+            <a href="#" class="text-xs hover:underline cursor-pointer">Give feedback</a>
           </div>
 
         </div>
@@ -329,7 +329,7 @@
               </div>
             </div>
 
-            <div class="flex gap-2">
+            <div title="Account switcher" class="flex gap-2">
               <div class="w-8 h-8 rounded hover:bg-light-gray cursor-pointer flex-center">
                 <svg aria-hidden="true" focusable="false" class="octicon octicon-arrow-switch icon fill-current w-4 h-4"
                   viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block"
@@ -348,7 +348,7 @@
           </div>
 
           <!-- profile quote -->
-          <div class="minibar-icons w-full justify-start">
+          <div title="Edit status" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
               <img src="https://github.githubassets.com/assets/octocat-829c0067cec9.png" alt="Github Icon">
             </div>
@@ -358,7 +358,7 @@
           <div class="w-full h-0.5 rounded bg-mute/10"></div>
 
           <!-- navigation links -->
-          <div class="minibar-icons w-full justify-start">
+          <a href="https://github.com/awizp" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
               <svg aria-hidden="true" focusable="false" class="octicon octicon-person icon fill-current w-4 h-4"
                 viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -369,9 +369,9 @@
               </svg>
             </div>
             <p>Profile</p>
-          </div>
+          </a>
 
-          <div class="minibar-icons w-full justify-start">
+          <a href="https://github.com/awizp?tab=repositories" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
               <svg aria-hidden="true" focusable="false" class="octicon octicon-repo icon fill-current w-4 h-4"
                 viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -382,9 +382,9 @@
               </svg>
             </div>
             <p>Repositories</p>
-          </div>
+          </a>
 
-          <div class="minibar-icons w-full justify-start">
+          <a href="https://github.com/awizp?tab=stars" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
               <svg aria-hidden="true" focusable="false" class="octicon octicon-star icon fill-current w-4 h-4"
                 viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -395,9 +395,9 @@
               </svg>
             </div>
             <p>Stars</p>
-          </div>
+          </a>
 
-          <div class="minibar-icons w-full justify-start">
+          <a href="https://gist.github.com/mine" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
               <svg aria-hidden="true" focusable="false" class="octicon octicon-code-square icon fill-current w-4 h-4"
                 viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -408,9 +408,9 @@
               </svg>
             </div>
             <p>Gists</p>
-          </div>
+          </a>
 
-          <div class="minibar-icons w-full justify-start">
+          <a href="https://github.com/settings/organizations" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
               <svg aria-hidden="true" focusable="false" class="octicon octicon-organization icon fill-current w-4 h-4"
                 viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -421,9 +421,9 @@
               </svg>
             </div>
             <p>Organisations</p>
-          </div>
+          </a>
 
-          <div class="minibar-icons w-full justify-start">
+          <a href="https://github.com/settings/enterprises" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
               <svg aria-hidden="true" focusable="false" class="octicon octicon-globe icon fill-current w-4 h-4"
                 viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -434,9 +434,9 @@
               </svg>
             </div>
             <p>Enterprises</p>
-          </div>
+          </a>
 
-          <div class="minibar-icons w-full justify-start">
+          <a href="https://github.com/sponsors/accounts" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
               <svg aria-hidden="true" focusable="false" class="octicon octicon-heart icon w-4 h-4 fill-current"
                 viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -447,25 +447,25 @@
               </svg>
             </div>
             <p>Sponcers</p>
-          </div>
+          </a>
 
           <div class="w-full h-0.5 rounded bg-mute/10"></div>
 
           <!-- navigation links -->
-          <div class="minibar-icons w-full justify-start">
+          <a href="https://github.com/settings/profile" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
-              <svg aria-hidden="true" focusable="false" class="octicon octicon-heart icon w-4 h-4 fill-current"
-                viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
+              <svg aria-hidden="true" focusable="false" class="octicon octicon-gear i-svg" viewBox=" 0 0 16 16"
+                width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
                 style="vertical-align: text-bottom;">
                 <path
-                  d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z">
+                  d="M8 0a8.2 8.2 0 0 1 .701.031C9.444.095 9.99.645 10.16 1.29l.288 1.107c.018.066.079.158.212.224.231.114.454.243.668.386.123.082.233.09.299.071l1.103-.303c.644-.176 1.392.021 1.82.63.27.385.506.792.704 1.218.315.675.111 1.422-.364 1.891l-.814.806c-.049.048-.098.147-.088.294.016.257.016.515 0 .772-.01.147.038.246.088.294l.814.806c.475.469.679 1.216.364 1.891a7.977 7.977 0 0 1-.704 1.217c-.428.61-1.176.807-1.82.63l-1.102-.302c-.067-.019-.177-.011-.3.071a5.909 5.909 0 0 1-.668.386c-.133.066-.194.158-.211.224l-.29 1.106c-.168.646-.715 1.196-1.458 1.26a8.006 8.006 0 0 1-1.402 0c-.743-.064-1.289-.614-1.458-1.26l-.289-1.106c-.018-.066-.079-.158-.212-.224a5.738 5.738 0 0 1-.668-.386c-.123-.082-.233-.09-.299-.071l-1.103.303c-.644.176-1.392-.021-1.82-.63a8.12 8.12 0 0 1-.704-1.218c-.315-.675-.111-1.422.363-1.891l.815-.806c.05-.048.098-.147.088-.294a6.214 6.214 0 0 1 0-.772c.01-.147-.038-.246-.088-.294l-.815-.806C.635 6.045.431 5.298.746 4.623a7.92 7.92 0 0 1 .704-1.217c.428-.61 1.176-.807 1.82-.63l1.102.302c.067.019.177.011.3-.071.214-.143.437-.272.668-.386.133-.066.194-.158.211-.224l.29-1.106C6.009.645 6.556.095 7.299.03 7.53.01 7.764 0 8 0Zm-.571 1.525c-.036.003-.108.036-.137.146l-.289 1.105c-.147.561-.549.967-.998 1.189-.173.086-.34.183-.5.29-.417.278-.97.423-1.529.27l-1.103-.303c-.109-.03-.175.016-.195.045-.22.312-.412.644-.573.99-.014.031-.021.11.059.19l.815.806c.411.406.562.957.53 1.456a4.709 4.709 0 0 0 0 .582c.032.499-.119 1.05-.53 1.456l-.815.806c-.081.08-.073.159-.059.19.162.346.353.677.573.989.02.03.085.076.195.046l1.102-.303c.56-.153 1.113-.008 1.53.27.161.107.328.204.501.29.447.222.85.629.997 1.189l.289 1.105c.029.109.101.143.137.146a6.6 6.6 0 0 0 1.142 0c.036-.003.108-.036.137-.146l.289-1.105c.147-.561.549-.967.998-1.189.173-.086.34-.183.5-.29.417-.278.97-.423 1.529-.27l1.103.303c.109.029.175-.016.195-.045.22-.313.411-.644.573-.99.014-.031.021-.11-.059-.19l-.815-.806c-.411-.406-.562-.957-.53-1.456a4.709 4.709 0 0 0 0-.582c-.032-.499.119-1.05.53-1.456l.815-.806c.081-.08.073-.159.059-.19a6.464 6.464 0 0 0-.573-.989c-.02-.03-.085-.076-.195-.046l-1.102.303c-.56.153-1.113.008-1.53-.27a4.44 4.44 0 0 0-.501-.29c-.447-.222-.85-.629-.997-1.189l-.289-1.105c-.029-.11-.101-.143-.137-.146a6.6 6.6 0 0 0-1.142 0ZM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM9.5 8a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 9.5 8Z">
                 </path>
               </svg>
             </div>
             <p>Settings</p>
-          </div>
+          </a>
 
-          <div class="minibar-icons w-full justify-start">
+          <a href="https://github.com/settings/copilot" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
               <svg aria-hidden="true" focusable="false" class="octicon octicon-copilot icon fill-current h-4 w-4"
                 viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -479,9 +479,9 @@
               </svg>
             </div>
             <p>Copilot settings</p>
-          </div>
+          </a>
 
-          <div class="minibar-icons w-full justify-start">
+          <a href="#" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
               <svg aria-hidden="true" focusable="false" class="octicon octicon-beaker icon w-4 h-4 fill-current"
                 viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -492,9 +492,9 @@
               </svg>
             </div>
             <p>Future preview</p>
-          </div>
+          </a>
 
-          <div class="minibar-icons w-full justify-start">
+          <a href="https://github.com/settings/appearance" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
               <svg aria-hidden="true" focusable="false" class="octicon octicon-paintbrush icon fill-current h-4 w-4"
                 viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -505,9 +505,9 @@
               </svg>
             </div>
             <p>Appearence</p>
-          </div>
+          </a>
 
-          <div class="minibar-icons w-full justify-start">
+          <a href="#" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
               <svg aria-hidden="true" focusable="false" class="octicon octicon-accessibility icon fill-current w-4 h-4"
                 viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -518,9 +518,9 @@
               </svg>
             </div>
             <p>Accessibility</p>
-          </div>
+          </a>
 
-          <div class="minibar-icons w-full justify-start">
+          <a href="https://github.com/organizations/enterprise_plan?" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
               <svg aria-hidden="true" focusable="false" class="octicon octicon-upload icon fill-current w-4 h-4"
                 viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -534,12 +534,12 @@
               </svg>
             </div>
             <p>Try Enterprice</p>
-          </div>
+          </a>
 
           <div class="w-full h-0.5 rounded bg-mute/10"></div>
 
           <!-- signout -->
-          <div class="minibar-icons w-full justify-start">
+          <a href="#" class="minibar-icons w-full justify-start">
             <div class="w-4 h-4">
               <svg aria-hidden="true" focusable="false" class="octicon octicon-sign-out h-4 w-4 icon fill-current"
                 viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
@@ -550,7 +550,7 @@
               </svg>
             </div>
             <p>Sign out</p>
-          </div>
+          </a>
 
         </div>
 
@@ -564,12 +564,13 @@
           </label>
 
           <!-- github logo -->
-          <div class="w-fit flex-center text-word hover:bg-light-gray rounded-full">
+          <a href="#" class="w-fit flex-center text-word hover:bg-light-gray rounded-full">
             <ion-icon name="logo-github" class="w-8 h-8"></ion-icon>
-          </div>
+          </a>
 
           <!-- github user -->
-          <p class="text-word text-sm rounded p-1 hover:bg-light-gray">anburocky3</p>
+          <a href="https://github.com/anburocky3"
+            class="text-word text-sm rounded p-1 hover:bg-light-gray">anburocky3</a>
 
         </div>
 
@@ -590,7 +591,7 @@
               </div>
             </div>
 
-            <div class="hidden p-1 text-xl lg:flex flex-center hover:bg-light-gray rounded">
+            <div title="Command Pallete" class="hidden p-1 text-xl lg:flex flex-center hover:bg-light-gray rounded">
               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
                 data-view-component="true" class="octicon octicon-command-palette icon w-4 h-4 fill-current">
                 <path
@@ -606,7 +607,8 @@
             <!-- github copilot logo -->
             <div class="w-fit flex-center border border-mute/10 rounded overflow-hidden">
 
-              <div class="h-8 w-8 flex-center hover:bg-light-gray cursor-pointer">
+              <a href="https://github.com/copilot" title="Chat with Copilot"
+                class="h-8 w-8 flex-center hover:bg-light-gray cursor-pointer">
                 <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
                   data-view-component="true" class="octicon octicon-copilot Button-visual icon fill-current w-4 h-4">
                   <path
@@ -616,18 +618,20 @@
                     d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z">
                   </path>
                 </svg>
-              </div>
+              </a>
 
-              <div class="flex-center w-6 h-8 border-l border-mute/10 hover:bg-light-gray cursor-pointer">
+              <a href="https://github.com/copilot" title="Open Copilot"
+                class="flex-center w-6 h-8 border-l border-mute/10 hover:bg-light-gray cursor-pointer">
                 <ion-icon name="caret-down" class="icon w-4 h-4"></ion-icon>
-              </div>
+              </a>
 
             </div>
 
             <div class="w-0.5 h-6 bg-mute/10 rounded"></div>
 
             <!-- github new-repository logo -->
-            <div class="w-fit flex-center border border-mute/10 rounded hover:bg-light-gray cursor-pointer">
+            <div title="Create new..."
+              class="w-fit flex-center border border-mute/10 rounded hover:bg-light-gray cursor-pointer">
               <div class="w-8 h-8 flex-center">
                 <ion-icon name="add" class="icon w-4 h-4"></ion-icon>
               </div>
@@ -640,17 +644,17 @@
           </div>
 
           <!-- github issues logo -->
-          <div
+          <a title="Your issues" href="https://github.com/issues"
             class="hidden md:flex h-8 w-8 flex-center hover:bg-light-gray cursor-pointer text-mute border border-mute/10 rounded">
             <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
               class="octicon octicon-issue-opened Button-visual fill-current icon w-4 h-4">
               <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
               <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
             </svg>
-          </div>
+          </a>
 
           <!-- github pull-request logo -->
-          <div
+          <a title="Your pull requests" href="https://github.com/pulls"
             class="hidden md:flex h-8 w-8 flex-center hover:bg-light-gray cursor-pointer text-mute border border-mute/10 rounded">
             <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
               class="octicon octicon-git-pull-request Button-visual fill-current icon w-4 h-4">
@@ -658,10 +662,10 @@
                 d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z">
               </path>
             </svg>
-          </div>
+          </a>
 
           <!-- github repository logo -->
-          <div
+          <a title="Your repositories" href="https://github.com/repos"
             class="hidden md:flex h-8 w-8 flex-center hover:bg-light-gray cursor-pointer text-mute border border-mute/10 rounded">
             <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
               class="octicon octicon-repo Button-visual fill-current icon w-4 h-4">
@@ -669,17 +673,18 @@
                 d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
               </path>
             </svg>
-          </div>
+          </a>
 
           <!-- github notification logo -->
-          <div class="h-8 w-8 flex-center hover:bg-light-gray cursor-pointer text-mute border border-mute/10 rounded">
+          <a title="You have no read notifications" href="https://github.com/notifications"
+            class="h-8 w-8 flex-center hover:bg-light-gray cursor-pointer text-mute border border-mute/10 rounded">
             <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
               class="octicon octicon-inbox Button-visual fill-current icon w-4 h-4">
               <path
                 d="M2.8 2.06A1.75 1.75 0 0 1 4.41 1h7.18c.7 0 1.333.417 1.61 1.06l2.74 6.395c.04.093.06.194.06.295v4.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-4.5c0-.101.02-.202.06-.295Zm1.61.44a.25.25 0 0 0-.23.152L1.887 8H4.75a.75.75 0 0 1 .6.3L6.625 10h2.75l1.275-1.7a.75.75 0 0 1 .6-.3h2.863L11.82 2.652a.25.25 0 0 0-.23-.152Zm10.09 7h-2.875l-1.275 1.7a.75.75 0 0 1-.6.3h-3.5a.75.75 0 0 1-.6-.3L4.375 9.5H1.5v3.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Z">
               </path>
             </svg>
-          </div>
+          </a>
 
           <!-- github user avatar -->
           <label for="profile_check" class="h-8 w-8 rounded-full overflow-hidden cursor-pointer">
@@ -697,7 +702,7 @@
         <!-- github mini navbar badges -->
         <div class="flex-center gap-3 w-fit h-full">
           <!-- github overview -->
-          <div class="git_overview minibar-icons">
+          <a href="https://github.com/anburocky3" class="git_overview minibar-icons">
             <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
               class="octicon octicon-book UnderlineNav-octicon fill-current icon w-4 h-4">
               <path
@@ -705,10 +710,10 @@
               </path>
             </svg>
             <p class="text-word">Overview</p>
-          </div>
+          </a>
 
           <!-- github repositories -->
-          <div class="hidden sm:flex minibar-icons">
+          <a href="https://github.com/anburocky3?tab=repositories" class="hidden xs:flex minibar-icons">
             <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
               class="octicon octicon-repo UnderlineNav-octicon fill-current icon w-4 h-4">
               <path
@@ -716,11 +721,11 @@
               </path>
             </svg>
             <p class="text-word">Repositories</p>
-            <span class="bg-badge text-word text-xs py-0.5 px-1.5 rounded-xl">185</span>
-          </div>
+            <span class="bg-badge text-word text-xs py-0.5 px-1.5 rounded-xl">187</span>
+          </a>
 
           <!-- github projects -->
-          <div class="hidden md:flex minibar-icons">
+          <a href="https://github.com/anburocky3?tab=projects" class="hidden md:flex minibar-icons">
             <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
               class="octicon octicon-table UnderlineNav-octicon icon w-4 h-4 fill-current">
               <path
@@ -728,10 +733,10 @@
               </path>
             </svg>
             <p class="text-word">Projects</p>
-          </div>
+          </a>
 
           <!-- github packages -->
-          <div class="hidden md:flex minibar-icons">
+          <a href="https://github.com/anburocky3?tab=packages" class="hidden md:flex minibar-icons">
             <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
               class="octicon octicon-package UnderlineNav-octicon icon w-4 h-4 fill-current">
               <path
@@ -739,10 +744,10 @@
               </path>
             </svg>
             <p class="text-word">Packages</p>
-          </div>
+          </a>
 
           <!-- github stars -->
-          <div class="hidden md:flex minibar-icons">
+          <a href="https://github.com/anburocky3?tab=stars" class="hidden md:flex minibar-icons">
             <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
               class="octicon octicon-star UnderlineNav-octicon icon w-4 h-4 fill-current">
               <path
@@ -751,7 +756,7 @@
             </svg>
             <p class="text-word">Stars</p>
             <span class="bg-badge text-word text-xs py-0.5 px-1.5 rounded-xl">75</span>
-          </div>
+          </a>
         </div>
 
         <!-- github mini navbar dot menu -->
@@ -779,12 +784,12 @@
         <div class="w-full flex flex-col items-center md:items-start md:flex-row gap-5 text-word">
 
           <!-- profile user personal details and contact -->
-          <div class="profile_user">
+          <div class="profile_user w-full">
 
             <!-- profile image -->
             <div class="user_avatar w-full pb-5">
 
-              <div class="w-fit rounded-full overflow-hidden border-2 border-mute/20">
+              <div class="hidden md:block w-fit rounded-full overflow-hidden border-2 border-mute/20">
                 <img src="/assets/img/anbuselvan.jfif" alt="User Avatar">
               </div>
 
@@ -793,27 +798,39 @@
                 😎
               </div>
 
+              <!-- mobile profile -->
+              <div class="flex items-center gap-2 md:hidden">
+                <div class="w-[45%] xs:w-[55%] rounded-full overflow-hidden border-2 border-mute/20">
+                  <img src="/assets/img/anbuselvan.jfif" alt="User Avatar">
+                </div>
+
+                <div class="w-full">
+                  <h1 class="text-word font-segoe-bold">Anbuselvan Annamalai</h1>
+                  <h2 class="text-mute">anburocky3 · he/him</h2>
+                </div>
+              </div>
+
             </div>
 
             <!-- profile name and follow details -->
             <div class="w-full flex flex-col gap-2">
-              <div class="block md:hidden">
+              <div class="block md:hidden p-2 border border-mute/20 rounded">
                 <p>😎 Creating new stuffs.</p>
               </div>
 
-              <div>
+              <div class="hidden md:block">
                 <h1 class="text-word font-segoe-bold">Anbuselvan Annamalai</h1>
                 <h2 class="text-mute">anburocky3 · he/him</h2>
               </div>
 
               <div class="w-full flex gap-2 items-center basis-full">
-                <button type="button"
-                  class="w-full flex-center p-2 hover:bg-badge bg-light-gray rounded cursor-pointer">Follow</button>
-                <button type="button"
+                <a href="https://github.com/anburocky3"
+                  class="w-full flex-center p-2 hover:bg-badge bg-light-gray rounded cursor-pointer">Follow</a>
+                <a href="https://github.com/sponsors/anburocky3"
                   class="w-full flex-center p-2 hover:bg-badge bg-light-gray rounded cursor-pointer gap-2">
                   <ion-icon name="heart-outline" class="icon w-4 h-4 text-pink"></ion-icon>
                   <p>Sponcer</p>
-                </button>
+                </a>
               </div>
 
               <div class="text-word">
@@ -821,7 +838,8 @@
               </div>
 
               <div class="w-full flex items-center gap-2 pb-5">
-                <p class="flex items-center gap-2 text-mute text-sm hover:text-blue">
+                <a href="https://github.com/anburocky3?tab=followers"
+                  class="flex items-center gap-2 text-mute text-sm hover:text-blue cursor-pointer">
                   <svg text="muted" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
                     data-view-component="true" class="octicon octicon-people w-4 h-4 fill-current">
                     <path
@@ -829,8 +847,10 @@
                     </path>
                   </svg>
                   616 followers
-                </p> ·
-                <p class="text-mute text-sm hover:text-blue"> 14 following</p>
+                </a> ·
+                <a href="https://github.com/anburocky3?tab=following"
+                  class="text-mute text-sm hover:text-blue cursor-pointer"> 14
+                  following</a>
               </div>
 
               <!-- details and links -->
@@ -843,7 +863,7 @@
                     </path>
                   </svg>
 
-                  <p>@CyberDudeNetworks</p>
+                  <p class="text-sm">@CyberDudeNetworks</p>
                 </div>
 
                 <div class="flex gap-3 items-center">
@@ -854,7 +874,7 @@
                     </path>
                   </svg>
 
-                  <p>Chennai, India, Planet Earth!</p>
+                  <p class="text-sm">Chennai, India, Planet Earth!</p>
                 </div>
 
                 <div class="flex gap-3 items-center">
@@ -865,7 +885,8 @@
                     </path>
                   </svg>
 
-                  <p class="hover:text-blue cursor-pointer">https://anbuselvan-annamalai.com</p>
+                  <a href="https://anbuselvan-annamalai.com/"
+                    class="hover:text-blue cursor-pointer text-sm">https://anbuselvan-annamalai.com</a>
                 </div>
 
                 <div class="flex gap-3 items-center">
@@ -877,7 +898,8 @@
                     </path>
                   </svg>
 
-                  <p class="hover:text-blue cursor-pointer">@anbuselvanrocky</p>
+                  <a href="https://twitter.com/anbuselvanrocky"
+                    class="hover:text-blue cursor-pointer text-sm">@anbuselvanrocky</a>
                 </div>
 
                 <div class="flex gap-3 items-center">
@@ -891,7 +913,8 @@
                     </g>
                   </svg>
 
-                  <p class="hover:text-blue cursor-pointer">anbuselvanrocky</p>
+                  <a href="https://www.instagram.com/anbuselvanrocky"
+                    class="hover:text-blue cursor-pointer text-sm">anbuselvanrocky</a>
                 </div>
 
                 <div class="flex gap-3 items-center">
@@ -902,7 +925,8 @@
                       fill="currentColor"></path>
                   </svg>
 
-                  <p class="hover:text-blue cursor-pointer">@anbuselvanrocky</p>
+                  <a href="https://www.youtube.com/@anbuselvanrocky"
+                    class="hover:text-blue cursor-pointer text-sm">@anbuselvanrocky</a>
                 </div>
 
               </div>
@@ -911,30 +935,31 @@
 
               <!-- achievements -->
               <div class="flex flex-col gap-2 py-5">
-                <p class="hover:text-blue hover:underline text-md pb-3 cursor-pointer">Achievements</p>
+                <a href="https://github.com/anburocky3?tab=achievements"
+                  class="hover:text-blue hover:underline text-md pb-3 cursor-pointer">Achievements</a>
 
                 <div class="flex gap-1 flex-wrap">
-                  <div class="w-12 h-12 rounded-full overflow-hidden">
+                  <div class="w-12 h-12 rounded-full overflow-hidden cursor-pointer">
                     <img src="https://github.githubassets.com/assets/quickdraw-default--medium-0bdca502f5b4.png"
                       alt="Achievement badges">
                   </div>
 
-                  <div class="w-12 h-12 rounded-full overflow-hidden">
+                  <div class="w-12 h-12 rounded-full overflow-hidden cursor-pointer">
                     <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png"
                       alt="Achievement badges">
                   </div>
 
-                  <div class="w-12 h-12 rounded-full overflow-hidden">
+                  <div class="w-12 h-12 rounded-full overflow-hidden cursor-pointer">
                     <img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png"
                       alt="Achievement badges">
                   </div>
 
-                  <div class="w-12 h-12 rounded-full overflow-hidden">
+                  <div class="w-12 h-12 rounded-full overflow-hidden cursor-pointer">
                     <img src="https://github.githubassets.com/assets/starstruck-default--medium-2670f78c9f2f.png"
                       alt="Achievement badges">
                   </div>
 
-                  <div class="w-12 h-12 rounded-full overflow-hidden">
+                  <div class="w-12 h-12 overflow-hidden cursor-pointer">
                     <img
                       src="https://github.githubassets.com/assets/arctic-code-vault-contributor-default-df8d74122a06.png"
                       alt="Achievement badges">
@@ -946,10 +971,11 @@
 
               <!-- highlights -->
               <div class="flex flex-col gap-2 py-2">
-                <p class="hover:text-blue hover:underline text-md pb-3 cursor-pointer">Highlights</p>
+                <p class="text-md pb-3">Highlights</p>
 
                 <div class="space-y-3">
-                  <p class="text-mute hover:text-blue hover:underline flex items-center cursor-pointer">
+                  <a href="https://docs.github.com/developers/overview/github-developer-program"
+                    class="text-mute hover:text-blue hover:underline flex items-center cursor-pointer">
                     <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
                       data-view-component="true" class="octicon octicon-cpu color-fg-muted mr-1 fill-current">
                       <path
@@ -957,7 +983,7 @@
                       </path>
                     </svg>
                     Developer Program Member
-                  </p>
+                  </a>
 
                   <p class="text-mute cursor-pointer">Block or Report</p>
                 </div>
@@ -973,8 +999,9 @@
           <div class="profile_about border border-mute/20 rounded-xl p-4 flex flex-col gap-5">
 
             <!-- readme file -->
-            <p class="text-word text-sm"><span class="hover:text-blue cursor-pointer">anburocky3</span> <span
-                class="text-mute">/</span><span class="text-xs">README</span><span class="text-mute">.md</span></p>
+            <p class="text-word text-sm"><a href="https://github.com/anburocky3/anburocky3"
+                class="hover:text-blue cursor-pointer">anburocky3</a> <span class="text-mute">/</span><span
+                class="text-xs">README</span><span class="text-mute">.md</span></p>
 
             <!-- readme name -->
             <div class="title_link flex gap-2 items-center p-2 border-b border-mute/20">
@@ -1002,41 +1029,41 @@
 
             <!-- readme badges -->
             <div class="flex flex-wrap gap-1">
-              <div class="cursor-pointer">
+              <a href="https://github.com/anburocky3" class="cursor-pointer">
                 <img
                   src="https://camo.githubusercontent.com/cbaab5f6c6902784db911ac57524a664350471eced33945681aa9c19bc53d212/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f6c6c6f776572732f616e6275726f636b79333f6c6162656c3d466f6c6c6f77267374796c653d736f6369616c"
                   alt="About badges">
-              </div>
+              </a>
 
-              <div class="cursor-pointer">
+              <a href="https://github.com/anburocky3" class="cursor-pointer">
                 <img
                   src="https://camo.githubusercontent.com/df7fdf44de8d1522c401fa78ea57c6296c649f7b88f3d97d55794d01c44ebdb5/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d616e6275726f636b793326636f6c6f723d677265656e"
                   alt="About badges">
-              </div>
+              </a>
 
-              <div class="cursor-pointer">
+              <a href="https://www.linkedin.com/in/anburocky3/" class="cursor-pointer">
                 <img
                   src="https://camo.githubusercontent.com/89efae8e39142b4d17f3d272a7b6657ba722561711dae54158c279ba65926e41/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d416e627573656c76616e253230416e6e616d616c61692d626c75653f7374796c653d666c61742d737175617265266c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d7768697465266c696e6b3d68747470733a2f2f7777772e6c696e6b6564696e2e636f6d2f696e2f616e6275726f636b79332f"
                   alt="About badges">
-              </div>
+              </a>
 
-              <div class="cursor-pointer">
+              <a href="https://instagram.com/anbuselvanrocky" class="cursor-pointer">
                 <img
                   src="https://camo.githubusercontent.com/fab4c0a432d53601d35066f35942016da2791ed411087bb5155dda7b6c8f8d77/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f496e7374616772616d2d2532334534343035462e7376673f6c6f676f3d496e7374616772616d266c6f676f436f6c6f723d7768697465"
                   alt="About badges">
-              </div>
+              </a>
 
-              <div class="cursor-pointer">
+              <a href="https://bit.ly/cyberdudeDiscord" class="cursor-pointer">
                 <img
                   src="https://camo.githubusercontent.com/4b319bf82c78eb3228d8f23aed5f55bb43ab51f9f3594ac56320280c6db46286/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f3734323334373239363039313533373434382e7376673f6c6162656c3d446973636f7264266c6f676f3d446973636f726426636f6c6f72423d373238396461"
                   alt="About badges">
-              </div>
+              </a>
 
-              <div class="cursor-pointer">
+              <a href="https://bit.ly/cyberdudeYT" class="cursor-pointer">
                 <img
                   src="https://camo.githubusercontent.com/7f58055c1031600ff28209b64a0db7d39120fcfba57c42461f8710051ac07b1c/68747470733a2f2f696d672e736869656c64732e696f2f796f75747562652f6368616e6e656c2f73756273637269626572732f55437465556a38624c3170705a63533730554357725666773f7374796c653d736f6369616c"
                   alt="About badges">
-              </div>
+              </a>
             </div>
 
             <!-- readme facts -->
@@ -1056,7 +1083,7 @@
             <!-- readme facts points -->
             <div class="flex flex-col gap-2 text-sm">
               <p>🔭 I’m Founder/CEO, Principal Scientist of
-                <span class="text-blue cursor-pointer">@cyberdude.</span>
+                <a href="https://cyberdudenetworks.com/" class="text-blue cursor-pointer">@cyberdude.</a>
               </p>
               <p>🧐 Learning about life, tech & <span class="line-through">love.</span></p>
               <p>👨‍💻 Most of my projects are available on GitHub.</p>
@@ -1067,8 +1094,8 @@
               <p>📙 Check out my resume by works! I don't have pdf!</p>
               <p>🎉 Fun Fact: <span class="p-1 rounded bg-badge text-xs">👉 பிடித்ததும் ஒரு நாள் பிடிக்காமலும்
                   போகலாம்!</span></p>
-              <p>🔗 My Portfolio: <span
-                  class="underline cursor-pointer text-blue">https://anbuselvan-annamalai.com</span> 😉</p>
+              <p>🔗 My Portfolio: <a href="https://anbuselvan-annamalai.com/"
+                  class="underline cursor-pointer text-blue">https://anbuselvan-annamalai.com</a> 😉</p>
             </div>
 
             <!-- readme techstack title -->
@@ -1179,6 +1206,11 @@
               </div>
 
               <h2 class="font-segoe-bold text-word">📊 GitHub Stats:</h2>
+            </div>
+
+            <!-- readme stats image -->
+            <div class="w-fit">
+              <img src="/assets/img/category-stats.svg" alt="category-stats">
             </div>
 
             <!-- readme trophies title -->
