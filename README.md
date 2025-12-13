@@ -18,7 +18,7 @@ A clean and responsive Github clone built using HTML, CSS and TailwindCSS for a 
 
 1. Clone this repository to your local machine
 
-``````git clone https://github.com/awizp/team-meet-layout.git``````
+``````git clone https://github.com/awizp/github-repo-clone.git``````
 
 2. Open the folder and Run ```npm install``` for install debendencies.
 
