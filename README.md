@@ -26,7 +26,7 @@ A clean and responsive Github clone built using HTML, CSS and TailwindCSS for a 
 
 ### Screenshot
 
-![Webpage Design](https://github.com/awizp/team-meet-layout/blob/main/public/assets/img/design.png)
+![Webpage Design](https://github.com/awizp/github-repo-clone/blob/main/public/assets/img/design.png)
 
 ### Live Demo
 
